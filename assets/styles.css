@@ -1,0 +1,395 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+
+/* Root styles */
+
+html{
+    background-color: #FFFFB3;
+    font-size: 62.5%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    color: #141414;
+}
+
+
+
+/* layout styles for mobile */
+
+/* site-wide layout styles */
+.container {
+    width: 98%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, section{
+    width: 100%;
+    border: solid 2px #0D21A1;
+    border-radius: 20px;
+    /* text-align: center; */
+
+    margin-top: 2rem;
+    margin: 2rem auto 0;
+}
+
+.sectionHeader{
+    margin-top: 4rem;
+}
+
+.sectionBottom{
+    padding-bottom: 4rem;
+}
+
+
+/* text elements tiles universal */
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 9rem;
+    
+    padding: 4rem 0;
+    margin: 0 auto;
+    text-align: center;
+
+    text-transform: uppercase;
+    text-shadow: #BCD2EE 0px 5px;
+    width: 80%;
+    margin: 0 auto;
+        /* should you carry this over to desktop? */
+    line-height: 1;
+}
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 800;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #BCD2EE 0px 5px;
+}
+
+p, li{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 500;
+    letter-spacing: .15rem;
+    font-size: 2rem;
+
+}
+
+a, .fakeA{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 200;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: #FFFFB3;
+    color: #0D21A1;
+    border: #0D21A1 2px solid;
+    border-radius: 20px;
+    padding: 1.5rem 3rem;
+
+        /* literally not sure if this is the best approach to have the buttons say a size... */
+    max-width: 250px;
+    min-width: 250px;
+
+    -webkit-transition: background-color .25s ease-in;
+}
+
+a:active, .fakeA:active{
+    background-color: #0D21A1;
+    color: #FFFFB3;
+    border: #FFFFB3 2px solid;
+    font-style: italic;
+    -webkit-transition: background-color .25s ease-out;
+}
+
+a:hover, .fakeA:hover{
+    background-color: #0D21A1;
+    color: #FFFFB3;
+    border: #FFFFB3 2px solid;
+    font-style: italic;
+    -webkit-transition: background-color .25s ease-out;
+}
+
+
+
+/* header styles */
+/* nav styles */
+nav ul{
+    max-width: 90%;
+    min-height: 25vh;
+    max-height: 25vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+
+    padding-left: 0px;
+    margin: 0 auto;
+    
+}
+
+nav ul li{
+    list-style: none;
+}
+
+.btn{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/* 'Palette' Section Styles */
+.swatches{
+    max-width: 400px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.swatch{
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.swatch p, .swatch li, .palette-p{
+    text-align: center; 
+}
+
+.color-one{
+    background-color: #FFFFB3;
+    color: #0D21A1;
+    border: #0D21A1 2px solid;
+}
+
+.color-two{
+    background-color: #141414;
+    color: #BCD2EE;
+    border: #BCD2EE solid 2px;
+}
+
+.color-three{
+    background-color: #0D21A1;
+    color: #FFFFB3;
+    border: solid 2px #FFFFB3;
+}
+
+.color-four{
+    background-color: #BCD2EE;
+    color: #141414;
+    border: solid 2px #141414;
+}
+
+
+
+
+/* 'fonts' section styles */
+.fontContainer{
+    text-align: center;
+}
+
+.fontPanel{
+padding: 2rem 2rem 0;
+
+}
+
+.bebasNeue{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.extraLight{
+    font-weight: 200;
+}
+
+.extraLightItalics{
+    font-weight: 200;
+    font-style: italic
+}
+
+.medium{
+    font-weight: 500;
+}
+
+        /* makes the font names a bit bigger than the sample senstences */
+.title{
+    font-size: 2.5rem;
+}
+
+
+
+
+/* 'Text Style' Section Styles */
+.textStyles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textStyles--header{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.textStyles--ul{
+    margin: 0 auto ;
+}
+
+.fontPannel{
+    margin: 0 auto;
+}
+
+.textStylesContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hover{
+    font-weight: 800;
+}
+
+            /* just giving the ilegal h1 in this section a bit more breathing room to better match the space in the other 'header' styles */
+.space{
+    padding: 3rem 0;
+}
+
+            /* just giving these a bit more breathing room to matchy match */
+.fakeA{
+    margin: 4rem 0;
+}
+
+
+
+/* footer styles */
+.footer__p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.special{
+   padding: 0; 
+   border: none;
+   font-size: 1.5rem;
+   -webkit-transition: background-color .25s ease-in;
+}
+
+.special:active{
+    background-color: #FFFFB3;
+    color: #0D21A1;
+    font-style: italic;
+    -webkit-transition: background-color .25s ease-out;
+}
+
+
+
+
+/* bigger screen styles */
+@media screen and (min-width: 900px) {
+    
+    .container{
+        width: 80%;
+        margin: 30px auto;
+        border: #0D21A1 2px solid;
+        border-radius: 20px;
+    }
+
+    header, section{
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin-top: 2rem;
+        margin: 2rem auto 0;
+    }
+
+    .line{
+        border-top: #0D21A1 2px solid;
+        margin: 0 auto;
+        padding-top: 6rem;
+    }
+    
+    .footer__p{
+        margin-bottom: 2.5rem;
+    }
+
+    .sectionBottom{
+        padding-bottom: 6rem;
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    
+    .container{
+        width: 80%;
+        margin: 30px auto;
+        border: #0D21A1 2px solid;
+        border-radius: 20px;
+    }
+
+    header, section{
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin-top: 2rem;
+        margin: 2rem auto 0;
+    }
+
+    .swatch{
+        width: 180px;
+        height: 300px;
+        justify-content: space-evenly;
+    }
+
+    .swatches{
+        max-width: 900px;
+    }
+
+    .specailLine{
+        border-top: #0D21A1 2px solid;
+        margin: 0 auto;
+        padding-top: 6rem;
+    }
+
+    nav ul{
+        max-width: 90%;
+        min-height: 0;
+        max-height: 0;
+     
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; 
+    
+        padding-left: 0px;
+        margin: 0 auto;
+    }
+    
+    .swatch{
+        width: 180px;
+        height: 300px;
+        justify-content: space-evenly;
+    }
+  }
