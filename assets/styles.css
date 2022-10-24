@@ -131,8 +131,6 @@ header, section{
  ===============================================*/
 nav ul{
     max-width: 90%;
-    min-height: 25vh;
-    max-height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -144,6 +142,7 @@ nav ul{
 
 nav ul li{
     list-style: none;
+    margin-top: 2rem;
 }
 
 .btn{
