@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gemunu+Libre:wght@200;300;800&family=Silkscreen&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/styles.css">
+
+</head>
+
+<body>
+
+<!-- lets give this site some margins, eh -->
+    <div class="container">
+
+
+<!-- Header (with nav)-->
+            <header>
+                <h1>Style Guide</h1>
+                <nav>
+                    <ul class="specailLine sectionBottom">
+                        <li><a href="#palette" class="btn">Pallate</a></li>
+                        <li><a href="#fonts" class="btn">Fonts</a></li>
+                        <li><a href="#textStyles" class="btn">Text Styles</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+<!-- Main -->
+            <main class="line">
+
+
+<!-- 'Pallate' Section -->
+            <section class="palette" id="palette">
+
+                <h2 class="palette-h2 sectionHeader">Pallate</h2>
+                <p class="palette-p">Use gratutiously and chaotically</p>
+
+
+                <div class="swatches sectionBottom">
+                    <div class="swatch color-one">
+                        <p>#FFFFB3</p>
+                        <p>Custard Crayola</p>
+                    </div>
+                    <div class=" swatch color-two">
+                        <p>#141414</p>
+                        <p>Eerie Black</p>
+                    </div>
+                    <div class="swatch color-three">
+                        <p>#0D21A1</p>
+                        <p>Blue Plantone</p>
+                    </div>
+                    <div class="swatch color-four">
+                        <p>#BCD2EE</p>
+                        <p>Light Steel Grey</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+<!-- 'Fonts' Section -->
+            <section class="fonts line" id="fonts">
+                <h2 class="sectionHeader">Fonts</h2>
+
+                <div class="fontContainer sectionBottom">
+
+                    <div class="fontPanel">
+                        <p class="bebasNeue title">Bebas Neue</p>
+                        <p class="bebasNeue">The quick brown fox jumps over the lazy dog.</p>
+                    </div>
+
+                    <div class="fontPanel">
+                        <p class="center title">Gemunu Libre</p>
+
+                        <div class="fontPanel--multipleExamples">
+                            <p class="extraLight">The quick brown fox jumps over the lazy dog.</p>
+                            <p class="extraLightItalics">The quick brown fox jumps over the lazy dog.</p>
+                            <p class="medium">The quick brown fox jumps over the lazy dog.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+<!-- 'Text Styles' Section -->
+            <section class="textStyles line" id="textStyles">
+                <h2 class="sectionHeader">Text Styles</h2>
+
+
+    <!-- Text Styles: H1 Tag info -->
+                <div class="textStylesContainer">
+                    <h1 class="space">H1: Main Page Heading</h1>
+                    
+                    <div class="textStyles--ul">
+                        <ul class="textStyles--rules">
+                            <li>color: #141414,</li>
+                            <li>text-shadow: #BCD2EE 0px 5px;</li>
+                            <li>font-family: 'Bebas Neue', cursive;</li>
+                            <li>font-weight: 800;</li>
+                            <li>font-size: 100px;</li>
+                            <li>text-transform: uppercase</li>     
+                        </ul>
+                    </div>
+                </div>
+                
+    <!-- Text Styles: H2 Tag info -->
+                <div class="textStylesContainer marginTop">
+                    <h2>H2: Subheadings</h2>
+
+                    <div class="textStyles--ul">
+                        <ul class="textStyles--rules">
+                            <li>color: #141414;</li>
+                            <li>text-shadow: #BCD2EE 0px 5px;</li>
+                            <li>font-family: 'Bebas Neue', cursive;</li>
+                            <li>font-weight: 800;</li>
+                            <li>font-size: 50px;</li>
+                            <li>text-transform: uppercase;</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+            
+    <!-- Text Styles: Paragraph Tag Into -->
+                <div class="textStylesContainer marginTop">
+                    <div class="textStyles--header">
+                        <p class="fakeA">P: Sentences</p>
+                    </div>
+                    
+                    <div class="textStyles--ul">
+                        <ul class="textStyles--rules">
+                            <li>color: #141414;</li>
+                            <li>font-family: 'Gemunu Libre', sans-serif;</li>
+                            <li>font-weight: 500;</li>
+                            <li>font-size: 20px;</li>
+                            <li>letter-spacing: .15rem;</li>
+                        </ul>
+                    </div>
+                </div>
+
+               
+    <!-- Text Styles: Anchor Tag Into -->
+                <div class="textStylesContainer marginTop sectionBottom">
+                    <div class="textStyles--header">
+                        <p class="fakeA">A: Links!</p>
+                    </div>
+                    
+                    <div class="textStyles--ul">
+                        <ul class="textStyles--rules">
+                            <li>color: #0D21A1;</li>
+                            <li>background-color: #FFFFB3;</li>
+                            <li>border: #0D21A1 2px solid;</li>
+                            <li>border-radius: 20px;</li>
+                            <li>text-decoration: none;</li>
+                            <li>font-family: 'Gemunu Libre', sans-serif;</li>
+                            <li>font-weight: 200;</li>
+                            <li>font-size: 25px;</li>
+                            <li>letter-spacing: 4px;</li>
+                            <li>padding: 1.5rem 3rem;</li>
+                            <li>text-transform: uppercase;</li>
+                            <br>
+                            <li> <div class="hover">:active/:hover reverse colors</div> </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+
+<!-- Footer -->
+        <footer>
+            <p class="footer__p line"><a href="https://www.codecademy.com/" class="special" target="_blank">Codecademy</a> Front End Engineering Career Path Style Guide Project dbuzzee/2022 :)</p>
+        </footer>
+    </div>
+
+</body>
+</html>
